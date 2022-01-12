@@ -1,3 +1,58 @@
 body{
-    background-image: ;
+
+    background-image:url("imagenes/ponyofondo.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 200px;
+  padding: 0;
+} 
+  .btnHome {
+  position: relative;
+  left: 0px;
+  width: 500px;
+  height: 218px;
+  }
+
+nav{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+width: 700px;
+height: 60px;
+position: absolute;
+left: 300px;
+background: #441E62;
+border-radius: 18px;
+
+
 }
+
+  ul {
+    position: relative;
+    left: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;  
+  }
+ 
+  a {
+    color: #fff;
+    padding: 30px;
+    font-size: 26px;
+  }
+  
+  a:hover {
+    color: rgb(121, 147, 170);
+  }
