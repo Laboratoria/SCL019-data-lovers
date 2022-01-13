@@ -7,6 +7,8 @@ body{
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    margin-bottom: 55%;
+    
   }
  
   header {
@@ -56,3 +58,48 @@ border-radius: 18px;
   a:hover {
     color: rgb(121, 147, 170);
   }
+.buscar{
+  position: absolute;
+  padding: 7px;
+  margin-left: 93%;
+
+}
+.buscar input{
+  width: 150px;
+  height: 15%;
+  border-radius: 8px;
+}
+
+.boxMiyasaki{
+  position: absolute;
+  width: 510px;
+  height: 480px;
+  left: -636px;
+  top: -157px;
+  
+  background: #200435;
+  border-radius: 18px; 
+}
+
+.miyasaki{
+position: absolute;
+width: 464px;
+height: 438px;
+left: -613px;
+top: -136px;
+border-radius: 18px;  
+}
+
+.reseñaSG{
+position: absolute;
+width: 300px;
+height: 300px;
+left: 30%;
+margin-top: 40%;
+background: rgba(32, 4, 53, 0.95);
+border-radius: 18px;
+color: white;
+font-family:'Nunito Sans', sans-serif;
+
+
+}
