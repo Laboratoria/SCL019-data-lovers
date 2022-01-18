@@ -8,30 +8,24 @@
 </head>
 
 <body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/Logostudio.png" alt="home" class="Logostudio"></div>
 
-  <section class="flex-conteiner">
-    <header>
-
-      <img src="imagenes/Logostudio.png" alt="home" class="Logostudio">
-
-    </header>
-
-    <nav>
-      <ul>
+      <div class="botones">
+     <ul>
         <li id="home" class="home"><a>Home</a></li>
-        <li id="peliculas" class="peliculas"><a href="#section-peliculas">Peliculas</a></li>
-        <li id="personajes" class="personajes"><a href="#section-personaje">Personajes</a></li>
-        <li id="history" class="history"><a href="#section-Historia">Historia</a></li>
-        <span><img src="imagenes/lupa.png" alt="home" class="img-lupa"></span>
+        <li id="peliculas"><a href="#section-peliculas">Peliculas</a></li>
+        <li id="personajes"><a href="#section-personaje">Personajes</a></li>
+        <li id="history"><a href="#section-Historia">Historia</a></li>
+       <!--span><img src="imagenes/lupa.png" alt="home" class="img-lupa"></span>-->
         <div class="Buscar">
           <input type="text" placeholder="Buscar" required>
         </div>
       </ul>
-    </nav>
-  </section>
-  <main>
-    <section class="flex-container">
-
+    </div> 
+    </header>
+    <section class="flex-conteiner">
       <img src="imagenes/miyasaky.jfif" alt="home" class="img1">
 
       <div class="reseñaSG">
@@ -40,14 +34,20 @@
           han realizado más de 20 películas, Debido a su popularidad, se abrió el Museo Ghibli, el cual se encuentra a
           las afueras de Tokio y para el 2022 se espera tener listo el Ghibli Park.</p>
       </div>
-
-
     </section>
-  </main>
-  <section id="section-peliculas">peliculas</section>
-  <section id="section-personaje">personaje</section>
-  <section id="section-Historia">historia</section>
-  
+
+    <main>
+  <section id="section-peliculas"><a>Películas</a></section>
+    <div class="films" id="boxfilms">
+
+    </div>
+
+  <section id="section-personaje" >Personaje</section>
+   <div class="">
+
+   </div>
+  <section id="section-Historia" class="historia">Historia</section>
+</main>
   <script src="main.js" type="module"></script>
 </body>
 
