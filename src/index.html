@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
@@ -15,6 +16,10 @@
       <img src="imagenes/Logostudio.png" alt="home" class="Logostudio">
 
     </header>
+    <audio  controls autoplay>
+      <source src="Audio/cancion.MP3" type="Audio/MP3">
+    </audio>
+
 
     <nav>
       <ul>
@@ -22,16 +27,17 @@
         <li id="peliculas" class="peliculas"><a href="#section-peliculas">Peliculas</a></li>
         <li id="personajes" class="personajes"><a href="#section-personaje">Personajes</a></li>
         <li id="history" class="history"><a href="#section-Historia">Historia</a></li>
-        <span><img src="imagenes/lupa.png" alt="home" class="img-lupa"></span>
-        <div class="Buscar">
-          <input type="text" placeholder="Buscar" required>
-        </div>
+
+        <div class="buscar">
+          <input type="text" placeholder="buscar" required>
+          <div class="btn">
+          </div>
       </ul>
     </nav>
   </section>
   <main>
     <section class="flex-container">
-
+    
       <img src="imagenes/miyasaky.jfif" alt="home" class="img1">
 
       <div class="reseñaSG">
@@ -44,10 +50,61 @@
 
     </section>
   </main>
-  <section id="section-peliculas">peliculas</section>
+  <section>
+    <div class="categorias">
+
+      <section id="section-peliculas">peliculas</section>
+
+      <select name="director" class="filter" id="director">
+        <option value="director"></option>
+        <option value="hayao">Hayao Miyazaki</option>
+        <option value="Isao">Isao Takahata</option>
+        <option value="Hiroyuki">Hiroyuki Morita</option>
+        <option value="Gorō ">Gorō Miyazaki</option>
+        <option value="Hiromasa">Hiromasa Yonebayashi</option>
+      </select>
+
+      <select name="productor" class="filter2" id="productor">
+        
+          <option value="productor"></option>
+          <option value="Isao">Isao Takahata</option>
+          <option value="Toru">Toru Hara</option>
+          <option value="Toshio">Toshio Suzuki</option>
+          <option value="Yoshiaki">Yoshiaki Nishimura</option>
+      </select>
+      <select name="año" class="filter" id="año">
+          <option value=""></option>
+          <option value="">1986</option>
+          <option value="">1989</option>
+          <option value="">1988</option>
+          <option value="">1991</option>
+          <option value="">1992</option>
+          <option value="">1994</option>
+          <option value="">1995</option>
+          <option value="">1997</option>
+          <option value="">2001</option>
+          <option value="">2004</option>
+          <option value="">2006</option>
+          <option value="">2008</option>
+          <option value="">2010</option>
+          <option value="">2011</option>
+          <option value="">2013</option>
+          <option value="">2014</option>
+      </select>
+
+
+
+    </div>
+
+   
+  </section>
+  <br>
+  <br>
+  <br>
+
   <section id="section-personaje">personaje</section>
   <section id="section-Historia">historia</section>
-  
+
   <script src="main.js" type="module"></script>
 </body>
 
