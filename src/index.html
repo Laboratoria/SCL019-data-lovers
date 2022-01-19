@@ -11,20 +11,13 @@
 <body>
   <header>
     <div class="logo">
-      <img src="imagenes/Logostudio.png" alt="home" class="Logostudio"></div>
-
-  <section class="flex-conteiner">
-    <header>
-
       <img src="imagenes/Logostudio.png" alt="home" class="Logostudio">
-
-    </header>
+    </div>
     <audio  controls autoplay>
-      <source src="Audio/cancion.MP3" type="Audio/MP3">
+      <source src="cancion.MP3" type="Audio/MP3">
     </audio>
 
-
-    <nav>
+    <div class="botones">
       <ul>
         <li id="home" class="home"><a>Home</a></li>
         <li id="peliculas" class="peliculas"><a href="#section-peliculas">Peliculas</a></li>
@@ -33,29 +26,25 @@
 
         <div class="buscar">
           <input type="text" placeholder="buscar" required>
-          <div class="btn">
-          </div>
+        </div>
       </ul>
-    </nav>
+    </div>
+  </header>
+
+  <section class="flex-conteiner">
+
+    <img src="imagenes/miyasaky.jfif" alt="home" class="img1">
+
+    <div class="reseñaSG">
+      <p>"El Studio Ghibli (スタジオジブリ Sutajio Jiburi) es un estudio de animación japonés, con sede en Tokio. Fue fundada
+        en 1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy,
+        han realizado más de 20 películas, Debido a su popularidad, se abrió el Museo Ghibli, el cual se encuentra a
+        las afueras de Tokio y para el 2022 se espera tener listo el Ghibli Park.</p>
+    </div>
   </section>
   <main>
-    <section class="flex-container">
+    <section id="section-peliculas"><a>Películas</a>
     
-      <img src="imagenes/miyasaky.jfif" alt="home" class="img1">
-
-      <div class="reseñaSG">
-        <p>"El Studio Ghibli (スタジオジブリ Sutajio Jiburi) es un estudio de animación japonés, con sede en Tokio. Fue fundada
-          en 1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy,
-          han realizado más de 20 películas, Debido a su popularidad, se abrió el Museo Ghibli, el cual se encuentra a
-          las afueras de Tokio y para el 2022 se espera tener listo el Ghibli Park.</p>
-      </div>
-    </section>
-  </main>
-  <section>
-    <div class="categorias">
-
-      <section id="section-peliculas">peliculas</section>
-
       <select name="director" class="filter" id="director">
         <option value="director"></option>
         <option value="hayao">Hayao Miyazaki</option>
@@ -66,45 +55,46 @@
       </select>
 
       <select name="productor" class="filter2" id="productor">
-        
-          <option value="productor"></option>
-          <option value="Isao">Isao Takahata</option>
-          <option value="Toru">Toru Hara</option>
-          <option value="Toshio">Toshio Suzuki</option>
-          <option value="Yoshiaki">Yoshiaki Nishimura</option>
+
+        <option value="productor"></option>
+        <option value="Isao">Isao Takahata</option>
+        <option value="Toru">Toru Hara</option>
+        <option value="Toshio">Toshio Suzuki</option>
+        <option value="Yoshiaki">Yoshiaki Nishimura</option>
       </select>
       <select name="año" class="filter" id="año">
-          <option value=""></option>
-          <option value="">1986</option>
-          <option value="">1989</option>
-          <option value="">1988</option>
-          <option value="">1991</option>
-          <option value="">1992</option>
-          <option value="">1994</option>
-          <option value="">1995</option>
-          <option value="">1997</option>
-          <option value="">2001</option>
-          <option value="">2004</option>
-          <option value="">2006</option>
-          <option value="">2008</option>
-          <option value="">2010</option>
-          <option value="">2011</option>
-          <option value="">2013</option>
-          <option value="">2014</option>
+        <option value=""></option>
+        <option value="">1986</option>
+        <option value="">1989</option>
+        <option value="">1988</option>
+        <option value="">1991</option>
+        <option value="">1992</option>
+        <option value="">1994</option>
+        <option value="">1995</option>
+        <option value="">1997</option>
+        <option value="">2001</option>
+        <option value="">2004</option>
+        <option value="">2006</option>
+        <option value="">2008</option>
+        <option value="">2010</option>
+        <option value="">2011</option>
+        <option value="">2013</option>
+        <option value="">2014</option>
       </select>
+    
+    </section>
+    <section>
+    <div class="films" id="boxfilms">
+    </div>
+  </section>
 
 
+    <section id="section-personaje">personaje</section>
+    <div class="">
 
     </div>
-
-   
-  </section>
-  <br>
-  <br>
-  <br>
-
-  <section id="section-personaje">personaje</section>
-  <section id="section-Historia">historia</section>
+    <section id="section-Historia">historia</section>
+  </main>
 
   <script src="main.js" type="module"></script>
 </body>
