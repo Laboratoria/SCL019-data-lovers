@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
@@ -9,45 +10,96 @@
 
 <body>
   <header>
+    <audio controls>
+      <source src="cancion.MP3" type="Audio/MP3">
+    </audio>
     <div class="logo">
-      <img src="imagenes/Logostudio.png" alt="home" class="Logostudio"></div>
-
-      <div class="botones">
-     <ul>
+      <img src="imagenes/Logostudio.png" alt="home" class="Logostudio">
+    </div>
+  
+  <br>
+<br>
+    <div class="botones">
+      <ul>
         <li id="home" class="home"><a>Home</a></li>
-        <li id="peliculas"><a href="#section-peliculas">Peliculas</a></li>
-        <li id="personajes"><a href="#section-personaje">Personajes</a></li>
-        <li id="history"><a href="#section-Historia">Historia</a></li>
-       <!--span><img src="imagenes/lupa.png" alt="home" class="img-lupa"></span>-->
-        <div class="Buscar">
-          <input type="text" placeholder="Buscar" required>
+        <li id="peliculas" class="peliculas"><a href="#section-peliculas">Peliculas</a></li>
+        <li id="personajes" class="personajes"><a href="#section-personaje">Personajes</a></li>
+        <li id="history" class="history"><a href="#section-Historia">Historia</a></li>
+
+        <div class="buscar">
+          <input type="text" placeholder="buscar" required>
         </div>
       </ul>
-    </div> 
-    </header>
-    <section class="flex-conteiner">
-      <img src="imagenes/miyasaky.jfif" alt="home" class="img1">
+    </div>
+  </header>
 
-      <div class="reseñaSG">
-        <p>"El Studio Ghibli (スタジオジブリ Sutajio Jiburi) es un estudio de animación japonés, con sede en Tokio. Fue fundada
-          en 1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy,
-          han realizado más de 20 películas, Debido a su popularidad, se abrió el Museo Ghibli, el cual se encuentra a
-          las afueras de Tokio y para el 2022 se espera tener listo el Ghibli Park.</p>
-      </div>
+  <section class="flex-conteiner">
+
+    <img src="imagenes/miyasaky.jfif" alt="home" class="img1">
+
+    <div class="reseñaSG">
+      <p>"El Studio Ghibli (スタジオジブリ Sutajio Jiburi) es un estudio de animación japonés, con sede en Tokio. Fue fundada
+        en 1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy,
+        han realizado más de 20 películas, Debido a su popularidad, se abrió el Museo Ghibli, el cual se encuentra a
+        las afueras de Tokio y para el 2022 se espera tener listo el Ghibli Park.</p>
+    </div>
+  </section>
+  <main>
+    <section id="section-peliculas"><a href="#home">Películas</a>
+    
+      <select name="director" class="filter-selectores" id="director">
+        <option value="director"></option>
+        <option value="hayao">Hayao Miyazaki</option>
+        <option value="Isao">Isao Takahata</option>
+        <option value="Hiroyuki">Hiroyuki Morita</option>
+        <option value="Gorō ">Gorō Miyazaki</option>
+        <option value="Hiromasa">Hiromasa Yonebayashi</option>
+      </select>
+
+      <select name="productor" class="filter-selectores" id="productor">
+
+        <option value="productor"></option>
+        <option value="Isao">Isao Takahata</option>
+        <option value="Toru">Toru Hara</option>
+        <option value="Toshio">Toshio Suzuki</option>
+        <option value="Yoshiaki">Yoshiaki Nishimura</option>
+      </select>
+      <select name="año" class="filter-selectores" id="año">
+        <option value=""></option>
+        <option value="">1986</option>
+        <option value="">1989</option>
+        <option value="">1988</option>
+        <option value="">1991</option>
+        <option value="">1992</option>
+        <option value="">1994</option>
+        <option value="">1995</option>
+        <option value="">1997</option>
+        <option value="">2001</option>
+        <option value="">2004</option>
+        <option value="">2006</option>
+        <option value="">2008</option>
+        <option value="">2010</option>
+        <option value="">2011</option>
+        <option value="">2013</option>
+        <option value="">2014</option>
+      </select>
+    
     </section>
-
-    <main>
-  <section id="section-peliculas"><a>Películas</a>
+    <section>
     <div class="films" id="boxfilms">
+    </div>
+  </section>
+
+
+    <section id="section-personaje"><a href="#home">Personaje</a>
+    </section>
+    <div class="">
 
     </div>
-</section>
-  <section id="section-personaje" >Personaje</section>
-   <div class="">
+    <section id="section-historia"><a href="#home">Historia</a>
+    </section>
+  </main>
 
-   </div>
-  <section id="section-Historia" class="historia">Historia</section>
-</main>
   <script src="main.js" type="module"></script>
 </body>
 
