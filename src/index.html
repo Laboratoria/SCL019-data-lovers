@@ -10,13 +10,15 @@
 
 <body>
   <header>
+    <audio controls>
+      <source src="cancion.MP3" type="Audio/MP3">
+    </audio>
     <div class="logo">
       <img src="imagenes/Logostudio.png" alt="home" class="Logostudio">
     </div>
-    <audio  controls autoplay>
-      <source src="cancion.MP3" type="Audio/MP3">
-    </audio>
-
+  
+  <br>
+<br>
     <div class="botones">
       <ul>
         <li id="home" class="home"><a>Home</a></li>
@@ -43,9 +45,9 @@
     </div>
   </section>
   <main>
-    <section id="section-peliculas"><a>Películas</a>
+    <section id="section-peliculas"><a href="#home">Películas</a>
     
-      <select name="director" class="filter" id="director">
+      <select name="director" class="filter-selectores" id="director">
         <option value="director"></option>
         <option value="hayao">Hayao Miyazaki</option>
         <option value="Isao">Isao Takahata</option>
@@ -54,7 +56,7 @@
         <option value="Hiromasa">Hiromasa Yonebayashi</option>
       </select>
 
-      <select name="productor" class="filter2" id="productor">
+      <select name="productor" class="filter-selectores" id="productor">
 
         <option value="productor"></option>
         <option value="Isao">Isao Takahata</option>
@@ -62,7 +64,7 @@
         <option value="Toshio">Toshio Suzuki</option>
         <option value="Yoshiaki">Yoshiaki Nishimura</option>
       </select>
-      <select name="año" class="filter" id="año">
+      <select name="año" class="filter-selectores" id="año">
         <option value=""></option>
         <option value="">1986</option>
         <option value="">1989</option>
@@ -89,11 +91,13 @@
   </section>
 
 
-    <section id="section-personaje">personaje</section>
+    <section id="section-personaje"><a href="#home">Personaje</a>
+    </section>
     <div class="">
 
     </div>
-    <section id="section-Historia">historia</section>
+    <section id="section-historia"><a href="#home">Historia</a>
+    </section>
   </main>
 
   <script src="main.js" type="module"></script>
