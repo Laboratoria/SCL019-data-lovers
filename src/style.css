@@ -1,0 +1,92 @@
+body{
+    background-color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.titulo h1,h3{
+    color:blue;
+    text-align: right;
+    margin-right: 90px; 
+} 
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.container{
+    margin: auto;
+    background-color: #56B32D;
+    border-radius: 25px;
+    width: 800px;
+    padding: 30px; 
+
+}
+
+ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity 1.5s;
+      background: #56B32D;
+      color: black;
+      margin-left: 20px;
+      border-radius: 20px;
+    
+}
+
+ul.slider li img{
+    width: 80%;
+    height: 300px; 
+    border-radius: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    object-fit: cover;
+  
+}
+
+
+ul.slider li:first-child {
+      opacity: 0; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+    text-align: center;
+    margin: 10px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #23A3E1;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
