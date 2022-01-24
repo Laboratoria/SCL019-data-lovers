@@ -87,6 +87,7 @@ ul.slider li:target {
   height: 20px;
   font-size: 20px;
   border-radius: 100%;
+  margin-top: 15px;
 }
 /*Barra menu*/
 #contenedorBarra {
@@ -118,3 +119,4 @@ ol {
 .barra li:hover > ul {
   display: block;
 }
+/*Pie de Pagina*/
