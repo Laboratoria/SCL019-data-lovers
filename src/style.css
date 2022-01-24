@@ -120,3 +120,8 @@ ol {
   display: block;
 }
 /*Pie de Pagina*/
+.piePagina {
+  margin: auto;
+  display: block;
+  width: 500px;
+}
