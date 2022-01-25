@@ -115,10 +115,22 @@ ol {
   display: none;
   position: absolute;
   min-width: 140px;
+  z-index: 6;
 }
 .barra li:hover > ul {
   display: block;
 }
+.deportes {
+  width: 150px;
+  height: 150px;
+  overflow-y: scroll;
+}
+.paises {
+  width: 150px;
+  height: 150px;
+  overflow-y: scroll;
+}
+
 /*Pie de Pagina*/
 .piePagina {
   margin: auto;
