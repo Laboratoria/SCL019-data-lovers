@@ -18,7 +18,8 @@ h3 {
   margin: auto;
   background-color: #56b32d;
   border-radius: 25px;
-  width: 800px;
+  width: 600px;
+  height: 400px;
   padding: 30px;
 }
 
@@ -31,36 +32,40 @@ li {
 
 ul.slider {
   position: relative;
-  width: 800px;
-  height: 300px;
+  width: 550px;
+  height: 350px;
+  
 }
 
 ul.slider li {
   position: absolute;
-  left: 0px;
+  left: 22px;
+  right: 22px;
   top: 0px;
   opacity: 0;
   width: inherit;
   height: inherit;
-  transition: opacity 1.5s;
+  transition: opacity .5s;
   background: #56b32d;
   color: black;
-  margin-left: 20px;
+  /* margin-left: 30px;
+  margin-right: 30px; */
   border-radius: 20px;
 }
 
 ul.slider li img {
-  width: 80%;
-  height: 300px;
+  width: 100%;
+  height: 350px;
   border-radius: 25px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 10px;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  margin-top: 0px;
+  text-align: center;
   object-fit: cover;
 }
 
 ul.slider li:first-child {
-  opacity: 0; /*Mostramos el primer <li>*/
+  opacity: 1; /*Mostramos el primer <li>*/
 }
 
 ul.slider li:target {
@@ -87,7 +92,7 @@ ul.slider li:target {
   height: 20px;
   font-size: 20px;
   border-radius: 100%;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 /*Barra menu*/
 #contenedorBarra {
@@ -136,4 +141,21 @@ ol {
   margin: auto;
   display: block;
   width: 500px;
+}
+
+
+.roots {
+  display: inline-flex;
+  flex-direction: column;
+  border: solid red;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.roots.cell {
+  display: inline-flex;
+  flex-direction: column;
+  border: solid blue;
+  border-radius: 10px;
+  padding: 10px;
 }
