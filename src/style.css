@@ -143,17 +143,23 @@ ol {
 }
 
 .roots {
-  display: inline-flex;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
   border: solid red;
   border-radius: 30px;
   padding: 10px;
+  margin: 50px;
 }
 
 .cell {
-  display: inline-flex;
-  flex-direction: row;
+  width: 100px;
+  height: 80px;
   border: solid blue;
   border-radius: 10px;
   padding: 10px;
+  margin: 20px;
+  text-align: center;
 }
