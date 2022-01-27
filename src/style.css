@@ -34,7 +34,6 @@ ul.slider {
   position: relative;
   width: 550px;
   height: 350px;
-  
 }
 
 ul.slider li {
@@ -45,7 +44,7 @@ ul.slider li {
   opacity: 0;
   width: inherit;
   height: inherit;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   background: #56b32d;
   color: black;
   /* margin-left: 30px;
@@ -143,7 +142,6 @@ ol {
   width: 500px;
 }
 
-
 .roots {
   display: inline-flex;
   flex-direction: column;
@@ -152,9 +150,9 @@ ol {
   padding: 10px;
 }
 
-.roots.cell {
+.cell {
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
   border: solid blue;
   border-radius: 10px;
   padding: 10px;
