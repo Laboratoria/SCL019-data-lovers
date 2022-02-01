@@ -9,16 +9,17 @@ let root = document.getElementById("table");
 
 // window.addEventListener("load", addAllCharacters(xs));
 const card = (data) => {
-    let tarjeta = document.createElement("div");
-    let name= document.createElement("p");
     
-    name.innerHTML = ''
     for (let i =0; i < data.length; i++){
+        let tarjeta = document.createElement("div");
+        let name= document.createElement("p");
+        name.innerHTML = ''
 
         tarjeta.setAttribute("class", "cell"); 
         tarjeta.setAttribute("id", "card"); 
         
         name.innerHTML = data[i].name;
+        
             
         root.appendChild(tarjeta);
         tarjeta.appendChild(name);
@@ -31,12 +32,22 @@ const card = (data) => {
     })
 
 //filtro genero
- const femFiltro = document.querySelector('#fem');
- femFiltro.addEventListener('click', ()=>{
-    let resultado = filterGenero(athletes,'F')
-    card(resultado)
-    console.log(resultado)
+ const atletasFiltro = document.getElementById('atletasMedallistas');
+ 
+ atletasFiltro.addEventListener('change',()=>{
+     var selectGenero = atletasFiltro.options[atletasFiltro.selectedIndex].value;
+     console.log(selectGenero)
+     let resultado = filterGenero(athletes,selectGenero)
+     card(resultado)
+     console.log(resultado)
      
- });
+ })
+ 
+//femFiltro.addEventListener('click', ()=>{
+    //let resultado = filterGenero(athletes,'F')
+    //card(resultado)
+    //console.log(resultado)
+     
+ //});
 
 
