@@ -11,14 +11,14 @@ let root = document.getElementById("table");
 const card = (data) => {
     let tarjeta = document.createElement("div");
     let name= document.createElement("p");
-
+    
     name.innerHTML = ''
     for (let i =0; i < data.length; i++){
 
         tarjeta.setAttribute("class", "cell"); 
         tarjeta.setAttribute("id", "card"); 
         
-        name.innerHTML += data[i].name;
+        name.innerHTML = data[i].name;
             
         root.appendChild(tarjeta);
         tarjeta.appendChild(name);
