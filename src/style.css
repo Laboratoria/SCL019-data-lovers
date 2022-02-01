@@ -98,8 +98,6 @@ ul.slider li:target {
   margin: auto;
   width: 500px;
   font-family: "Dosis", sans-serif;
-}
-.barra li {
   text-align: center;
   background-color: #23a3e1;
   color: white;
@@ -108,22 +106,7 @@ ul.slider li:target {
   text-decoration: none;
   min-width: 100px;
 }
-ul,
-ol {
-  list-style: none;
-}
-.barra > li {
-  float: left;
-}
-.barra li ul {
-  display: none;
-  position: absolute;
-  min-width: 140px;
-  z-index: 6;
-}
-.barra li:hover > ul {
-  display: block;
-}
+
 .deportes {
   width: 150px;
   height: 150px;
