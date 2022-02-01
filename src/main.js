@@ -2,18 +2,20 @@
 
 import { filterGenero } from './data.js';
 import data from './data/athletes/athletes.js';
+
 let athletes = data.athletes;
 console.log(athletes);
-
 let root = document.getElementById("table");
 
-// window.addEventListener("load", addAllCharacters(xs));
+
 const card = (data) => {
+    root.innerHTML = '';
     
     for (let i =0; i < data.length; i++){
+
         let tarjeta = document.createElement("div");
         let name= document.createElement("p");
-        name.innerHTML = ''
+        
 
         tarjeta.setAttribute("class", "cell"); 
         tarjeta.setAttribute("id", "card"); 
