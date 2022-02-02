@@ -46,7 +46,8 @@ ul.slider li {
   height: inherit;
   transition: opacity 0.5s;
   background: #56b32d;
-  color: black;
+  color: white;
+  font-weight: 500;
   /* margin-left: 30px;
   margin-right: 30px; */
   border-radius: 20px;
@@ -93,29 +94,33 @@ ul.slider li:target {
   border-radius: 100%;
   margin-top: 20px;
 }
+
+
 /*Barra menu*/
 #contenedorBarra {
   margin: auto;
-  width: 500px;
+  width: auto;
   font-family: "Dosis", sans-serif;
   text-align: center;
   background-color: #23a3e1;
   color: white;
   padding: 20px 25px;
+  border-radius: 20px;
   display: block;
   text-decoration: none;
   min-width: 100px;
 }
-
-.deportes {
-  width: 150px;
-  height: 150px;
-  overflow-y: scroll;
-}
+.atletasMedallistas, 
+.deportes, 
 .paises {
-  width: 150px;
-  height: 150px;
+  padding: 10px;
   overflow-y: scroll;
+  border-radius: 12px;
+  font-family: "Dosis", sans-serif;
+  width: 200px;
+  height: 40px;
+  font-weight: bolder;
+
 }
 
 /*Pie de Pagina*/
