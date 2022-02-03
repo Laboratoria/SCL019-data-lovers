@@ -14,3 +14,9 @@ export const filterGenero = (data, valor) =>{                                   
   return mujeresMedallistas;                                                                // que la funcion nos devuelva lo pedido en la var mujeresMedallistas
   
 }; 
+
+//funcion para filtrar por
+export const filterSport = (data, valor) =>{
+  const sport = data.filter(atleta =>(atleta.sport===valor));
+  return sport;
+};
