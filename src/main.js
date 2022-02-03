@@ -4,7 +4,7 @@ import { filterGenero } from './data.js';
 import data from './data/athletes/athletes.js';
 
 let athletes = data.athletes;                                // crear variable que contiene info de los atletas
-console.log(athletes);
+//console.log(athletes);
 let root = document.getElementById("table");                 // se llamma al elemento con id Table (es donde ira la info de los atletas, segun nuestro html)
 
 
@@ -38,11 +38,12 @@ const card = (data) => {                                     // crear una funcio
  
  atletasFiltro.addEventListener('change',()=>{                                        // evento que se dispara y usa los datos ligados a la opcion dando respuesta segun seleccion y que realice la sgte funcion 
      var selectGenero = atletasFiltro.options[atletasFiltro.selectedIndex].value;     // se crea var que tome las opciones desde la const aletasfiltro y segun  el valor seleccionado (F-M)
-     console.log(selectGenero)
+     //console.log(selectGenero)
 
-     let resultado = filterGenero(athletes,selectGenero)                              // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
+     let resultado = filterGenero(athletes,selectGenero) 
+     //console.log(resultado)                             // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
      card(resultado)                                                                  // se usa la funcion card para que nos cree el formado de var resultados 
-     console.log(resultado)
+     //console.log(resultado)
      
  })
  
