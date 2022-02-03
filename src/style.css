@@ -3,15 +3,19 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
-.titulo h1,
-h3 {
+.titulo {
   color: blue;
   text-align: right;
-  margin-right: 90px;
+  margin: auto;
+  padding-top: 10px;
+  display: inline;
 }
 .logo {
-  height: 200px;
-  width: 300px;
+  position: absolute;
+  width: 187px;
+  height: 104px;
+  left: 10px;
+  top: 10px;
 }
 
 .container {
@@ -95,7 +99,6 @@ ul.slider li:target {
   margin-top: 20px;
 }
 
-
 /*Barra menu*/
 #contenedorBarra {
   margin: auto;
@@ -110,8 +113,8 @@ ul.slider li:target {
   text-decoration: none;
   min-width: 100px;
 }
-.atletasMedallistas, 
-.deportes, 
+.atletasMedallistas,
+.deportes,
 .paises {
   padding: 10px;
   overflow-y: scroll;
@@ -120,7 +123,6 @@ ul.slider li:target {
   width: 200px;
   height: 40px;
   font-weight: bolder;
-
 }
 
 /*Pie de Pagina*/
