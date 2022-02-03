@@ -1,4 +1,7 @@
-import { filterGenero } from '../src/data.js';
+import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
+
+import { filterGenero,filterSport } from '../src/data.js';
+
 
 const data = [
   {
@@ -38,6 +41,7 @@ const data = [
     weight: "90",
   }
 ]
+//test para filtro por genero 
 describe('filterGenero', () => {
   it('deberia ser una funcion', () => {
     expect(typeof filterGenero).toBe('function');
@@ -59,13 +63,29 @@ describe('filterGenero', () => {
   });
 });
 
+// test para filtro por deporte 
+describe('filterSport', () => {
+  it('deberia ser una funcion', () => {
+    expect(typeof filterSport).toBe('function');
+  });
+
+  it('returns `filterSport`', () => {
+    expect(filterSport(data,'Taekwondo')).toEqual([{
+    age: 21,
+    event: "Taekwondo Women's Flyweight",
+    gender: "F",
+    height: "165",
+    medal: "Bronze",
+    name: "Patimat Abakarova",
+    noc: "AZE",
+    sport: "Taekwondo",
+    team: "Azerbaijan",
+    weight: "49"
+  }]);
+  });
+});
 
 //describe('anotherExample', () => {
   //it('is a function', () => {
     //expect(typeof anotherExample).toBe('function');
   //});
-
-  //it('returns `anotherExample`', () => {
-    //expect(anotherExample()).toBe('OMG');
-  //});
-//});
