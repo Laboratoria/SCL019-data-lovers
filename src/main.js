@@ -1,7 +1,10 @@
 // import { example } from './data.js';
 
 import { filterGenero } from './data.js';
+import {filterSport} from './data.js';
 import data from './data/athletes/athletes.js';
+
+
 
 let athletes = data.athletes;                                // crear variable que contiene info de los atletas
 //console.log(athletes);
@@ -33,7 +36,7 @@ const card = (data) => {                                     // crear una funcio
         card(athletes)
     })
 
-//filtro segun genero e impromir en HTML
+//filtro segun genero e imprimir en HTML
  const atletasFiltro = document.getElementById('atletasMedallistas');                 //se crea var, que llame desde el select creado, select que tiene 2 opciones
  
  atletasFiltro.addEventListener('change',()=>{                                        // evento que se dispara y usa los datos ligados a la opcion dando respuesta segun seleccion y que realice la sgte funcion 
@@ -46,7 +49,17 @@ const card = (data) => {                                     // crear una funcio
      //console.log(resultado)
      
  })
- 
+ //filtro segun deporte e imprimir en HTML
+const deporteFiltro = document.getElementById('deportes');
+
+deporteFiltro.addEventListener('change',()=>{
+    var selectSport = deporteFiltro.options[deporteFiltro.selectedIndex].value;
+
+    let deporteFiltrado = filterSport(athletes,selectSport)
+
+    card(deporteFiltrado)
+
+})
 //femFiltro.addEventListener('click', ()=>{
     //let resultado = filterGenero(athletes,'F')
     //card(resultado)
