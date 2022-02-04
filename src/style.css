@@ -123,6 +123,19 @@ ul.slider li:target {
   width: 200px;
   height: 40px;
   font-weight: bolder;
+  margin-left: 110px;
+}
+
+.ordenar button{
+  background: #23a3e1;
+  color: white;
+  border-radius: 12px;
+  font-family: "Dosis", sans-serif;
+  width: 200px;
+  height: 40px;
+  margin-left: 70px;
+
+
 }
 
 /*Pie de Pagina*/
@@ -142,15 +155,30 @@ ul.slider li:target {
   border-radius: 30px;
   padding: 10px;
   margin: 50px;
+  /*overflow: scroll;*/
 }
 
 .cell {
-  width: 100px;
-  height: 80px;
-  border: solid blue;
+  width: 140px;
+  height: 180px;
+  border: solid #56b32d;
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
-  text-align: center;
   font-family: "Dosis", sans-serif;
+}
+.roots h3 {
+  text-align: center;
+  font-weight:bold;
+  color: gray;
+}
+.roots p {
+  font-style: normal;
+  text-align: left;
+  color: gray;
+}
+.roots p1 {
+  font-style: normal;
+  text-align: left;
+  color: gray;
 }
