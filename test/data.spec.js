@@ -1,6 +1,6 @@
 import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
 
-import { filterGenero,filterSport } from '../src/data.js';
+import { filterGenero,filterSport,filterNoc } from '../src/data.js';
 
 
 const data = [
@@ -81,6 +81,28 @@ describe('filterSport', () => {
     sport: "Taekwondo",
     team: "Azerbaijan",
     weight: "49"
+  }]);
+  });
+});
+
+//test para filtro de paises 
+describe('filterNoc', () => {
+  it('deberia ser una funcion', () => {
+    expect(typeof filterNoc).toBe('function');
+  });
+
+  it('returns `filterNoc`', () => {
+    expect(filterNoc(data,'ITA')).toEqual([{
+    age: 21,
+    event: "Rowing Men's Coxless Pairs",
+    gender: "M",
+    height: "198",
+    medal: "Bronze",
+    name: "Giovanni Abagnale",
+    noc: "ITA",
+    sport: "Rowing",
+    team: "Italy",
+    weight: "90"
   }]);
   });
 });

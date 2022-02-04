@@ -2,6 +2,7 @@
 
 import { filterGenero } from './data.js';
 import {filterSport} from './data.js';
+import {filterNoc} from './data.js';
 import data from './data/athletes/athletes.js';
 
 
@@ -18,16 +19,22 @@ const card = (data) => {                                     // crear una funcio
     for (let i =0; i < data.length; i++){                    // repetir las sgtes instrucciones:
 
         let tarjeta = document.createElement("div");         // crear  un elemento  <div> 
-        let name= document.createElement("p");               // crear un elemneto <p> para ingresar la info 
+        let name= document.createElement("h3"); 
+        let sport= document.createElement("p"); 
+        let team= document.createElement("p1");              // crear un elemneto <p> para ingresar la info 
         
         tarjeta.setAttribute("class", "cell");               // a la var creada, se le dan atributos  
         tarjeta.setAttribute("id", "card");                  // a la var creada, se le dan atributos de Id, card 
         
-        name.innerHTML = data[i].name;                       // que nos imprima el nombre en HTML
+        name.innerHTML = data[i].name;                       // que nos imprima el nombre en HTML   
+        sport.innerHTML = "Deporte: " + data[i].sport; 
+        team.innerHTML = "Pais: " + data[i].team;                       
         
             
         root.appendChild(tarjeta);                           // crea el. hijos igual a la tarjeta definida en html
-        tarjeta.appendChild(name);                           // la tarjeta llevara  el elemento hijo
+        tarjeta.appendChild(name);
+        tarjeta.appendChild(sport); 
+        tarjeta.appendChild(team);                           // la tarjeta llevara  el elemento hijo
     }
     
     }
@@ -39,7 +46,7 @@ const card = (data) => {                                     // crear una funcio
 //filtro segun genero e imprimir en HTML
  const atletasFiltro = document.getElementById('atletasMedallistas');                 //se crea var, que llame desde el select creado, select que tiene 2 opciones
  
- atletasFiltro.addEventListener('change',()=>{                                        // evento que se dispara y usa los datos ligados a la opcion dando respuesta segun seleccion y que realice la sgte funcion 
+ atletasFiltro.addEventListener('change',()=>{                                        // evento que se dispara info ligada a la opcion de seleccion y que realice la sgte funcion 
      var selectGenero = atletasFiltro.options[atletasFiltro.selectedIndex].value;     // se crea var que tome las opciones desde la const aletasfiltro y segun  el valor seleccionado (F-M)
      //console.log(selectGenero)
 
@@ -60,6 +67,22 @@ deporteFiltro.addEventListener('change',()=>{
     card(deporteFiltrado)
 
 })
+
+ //filtro segun país e imprimir en HTML
+ const paisesFiltro = document.getElementById('paises');
+
+ paisesFiltro.addEventListener('change',()=>{
+     var selectPais = paisesFiltro.options[paisesFiltro.selectedIndex].value;
+ 
+     let paisFiltrado = filterNoc(athletes,selectPais)
+ 
+     card(paisFiltrado)
+ 
+        //console.log(paisFiltrado)
+
+ })
+
+
 //femFiltro.addEventListener('click', ()=>{
     //let resultado = filterGenero(athletes,'F')
     //card(resultado)
