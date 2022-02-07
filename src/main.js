@@ -3,6 +3,7 @@
 import { filterGenero } from './data.js';
 import {filterSport} from './data.js';
 import {filterNoc} from './data.js';
+import {ordenarAZ, ordenarZA} from './data.js';
 import data from './data/athletes/athletes.js';
 
 
@@ -21,20 +22,23 @@ const card = (data) => {                                     // crear una funcio
         let tarjeta = document.createElement("div");         // crear  un elemento  <div> 
         let name= document.createElement("h3"); 
         let sport= document.createElement("p"); 
-        let team= document.createElement("p1");              // crear un elemneto <p> para ingresar la info 
+        let team= document.createElement("p1");               // crear un elemneto <p> para ingresar la info
+        let medal= document.createElement("p2");                
         
         tarjeta.setAttribute("class", "cell");               // a la var creada, se le dan atributos  
         tarjeta.setAttribute("id", "card");                  // a la var creada, se le dan atributos de Id, card 
         
         name.innerHTML = data[i].name;                       // que nos imprima el nombre en HTML   
         sport.innerHTML = "Deporte: " + data[i].sport; 
-        team.innerHTML = "Pais: " + data[i].team;                       
+        team.innerHTML = "Pais: " + data[i].team; 
+        medal.innerHTML = "Medalla: " + data[i].medal;                      
         
             
         root.appendChild(tarjeta);                           // crea el. hijos igual a la tarjeta definida en html
         tarjeta.appendChild(name);
         tarjeta.appendChild(sport); 
-        tarjeta.appendChild(team);                           // la tarjeta llevara  el elemento hijo
+        tarjeta.appendChild(team);  
+        tarjeta.appendChild(medal);                         // la tarjeta llevara  el elemento hijo
     }
     
     }
@@ -81,7 +85,22 @@ deporteFiltro.addEventListener('change',()=>{
         //console.log(paisFiltrado)
 
  })
+// filtro orden alfabeticamente
+const alfabeto = document.getElementById ('ordenarSort');
+    alfabeto.addEventListener('change', (evento) =>{
+        var optionSelecionado = evento.target.value;
+        if (optionSelecionado === 'az'){
+            let sortAZ = ordenarAZ(athletes);
+            card(sortAZ)
+        }
+        if (optionSelecionado === 'za'){
+            let sortZA = ordenarZA(athletes);
+            card(sortZA)
+        }
 
+
+
+});
 
 //femFiltro.addEventListener('click', ()=>{
     //let resultado = filterGenero(athletes,'F')
