@@ -26,3 +26,14 @@ export const filterNoc = (data, valor) =>{
   const noc = data.filter(atleta =>(atleta.noc===valor));
   return noc;
 };
+
+//funcion ordenar ascendente
+export const ordenarAZ =(data) =>{
+  const ordenarAsc = data.sort((a, b) => ((a.name.toUpperCase() > b.name.toUpperCase()) ? 1 : -1 ));
+  return ordenarAsc;
+};
+//orden descendente
+export const ordenarZA =(data) =>{
+  const ordenarDes = data.sort((a, b) => ((a.name.toUpperCase() < b.name.toUpperCase()) ? 1 : -1 ));
+  return ordenarDes;
+};
