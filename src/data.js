@@ -37,3 +37,9 @@ export const ordenarZA =(data) =>{
   const ordenarDes = data.sort((a, b) => ((a.name.toUpperCase() < b.name.toUpperCase()) ? 1 : -1 ));
   return ordenarDes;
 };
+
+// //input buscar
+// export const buscar = (athletes, value) => {
+//   const buscador = athletes.filter(el => el.name.toLowerCase().includes(value.toLowerCase()));
+//   return buscador;
+//   };

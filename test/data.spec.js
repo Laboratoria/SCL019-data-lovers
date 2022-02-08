@@ -1,6 +1,6 @@
 import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
 
-import { filterGenero,filterSport,filterNoc } from '../src/data.js';
+import { filterGenero,filterSport,filterNoc, ordenarAZ } from '../src/data.js';
 
 
 const data = [
@@ -107,7 +107,19 @@ describe('filterNoc', () => {
   });
 });
 
-//describe('anotherExample', () => {
-  //it('is a function', () => {
-    //expect(typeof anotherExample).toBe('function');
-  //});
+//test para ordenar AZ 
+describe('Funcion ordenarAZ', () => {
+  it('deberia ser una function', () => {
+    expect(typeof ordenarAZ).toBe('function');
+  });
+
+  it('Debería retornar nombres de los atletas ordenados alfabeticamentre', () => {
+    
+    let ordenarAz = ordenarAZ(data);
+
+    expect(ordenarAz[0].name).toBe('Chantal Achterberg');
+    expect(ordenarAz[1].name).toBe('Giovanni Abagnale');
+    expect(ordenarAz[2].name).toBe('Patimat Abakarova');
+});
+
+})

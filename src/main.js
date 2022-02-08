@@ -22,8 +22,8 @@ const card = (data) => {                                     // crear una funcio
         let tarjeta = document.createElement("div");         // crear  un elemento  <div> 
         let name= document.createElement("h3"); 
         let sport= document.createElement("p"); 
-        let team= document.createElement("p1");               // crear un elemneto <p> para ingresar la info
-        let medal= document.createElement("p2");                
+        let team= document.createElement("p");               // crear un elemneto <p> para ingresar la info
+        let medal= document.createElement("p");                
         
         tarjeta.setAttribute("class", "cell");               // a la var creada, se le dan atributos  
         tarjeta.setAttribute("id", "card");                  // a la var creada, se le dan atributos de Id, card 
@@ -55,7 +55,7 @@ const card = (data) => {                                     // crear una funcio
      //console.log(selectGenero)
 
      let resultado = filterGenero(athletes,selectGenero) 
-     //console.log(resultado)                             // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
+     //console.log(resultado)                                                         // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
      card(resultado)                                                                  // se usa la funcion card para que nos cree el formado de var resultados 
      //console.log(resultado)
      
@@ -101,6 +101,20 @@ const alfabeto = document.getElementById ('ordenarSort');
 
 
 });
+
+
+/* buscador por atleta */
+// const inputSearch = document.getElementById('search');                  
+
+// inputSearch.addEventListener('input', (e) => {
+// const { value } = e.target;
+// card(buscar(athletes, value));
+// });
+
+
+
+
+
 
 //femFiltro.addEventListener('click', ()=>{
     //let resultado = filterGenero(athletes,'F')
