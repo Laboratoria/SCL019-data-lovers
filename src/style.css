@@ -8,7 +8,9 @@ body {
   text-align: right;
   margin: auto;
   padding-top: 10px;
+  margin-right: 200px;
   display: inline;
+  
 }
 .logo {
   position: absolute;
@@ -117,13 +119,14 @@ ul.slider li:target {
 .atletasMedallistas,
 .deportes,
 .paises {
-  padding: 10px;
+  padding: 8px;
   overflow-y: scroll;
   border-radius: 12px;
   font-family: "Dosis", sans-serif;
   width: 200px;
   height: 40px;
-  font-weight: bolder;
+  /*font-weight: bolder;*/
+  font-size:medium;
   margin-left: 110px;
 }
 /*option orden alfabetico*/
@@ -132,6 +135,8 @@ ul.slider li:target {
   color: white;
   border-radius: 12px;
   font-family: "Dosis", sans-serif;
+  font-size: medium; 
+  /*font-weight: bolder;*/
   width: 200px;
   height: 40px;
   margin-left: 70px;
@@ -149,13 +154,23 @@ ul.slider li:target {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
-  height: auto;
-  border: solid #23a3e1;
+  height: 560px;
+  overflow-y: scroll;
+  border: 10px solid #23a3e1;
   border-radius: 30px;
   padding: 10px;
   margin: 50px;
-  /*overflow: scroll;*/
 }
+/* Scroll Personalizado */
+.roots::-webkit-scrollbar {
+	width: 20px;
+}
+
+.roots::-webkit-scrollbar-thumb {
+	background: #56b32d;
+	border-radius: 35px;
+}
+
 
 .cell {
   width: 160px;
@@ -170,19 +185,20 @@ ul.slider li:target {
   text-align: center;
   font-weight: bold;
   color: gray;
+  padding-bottom: 35px;
 }
 .roots p {
   font-style: normal;
   text-align: left;
   color: gray;
+  margin: -1px;
+  
 }
-.roots p1 {
-  font-style: normal;
-  text-align: left;
-  color: gray;
+
+input[type="search"]{
+  padding: 10px;
+  padding-right: 35px;
+  border: solid #23a3e1;
+  border-radius: 12px;
 }
-.roots p2 {
-  font-style: normal;
-  text-align: left;
-  color: gray;
-}
+
