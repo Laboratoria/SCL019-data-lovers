@@ -4,13 +4,12 @@ body {
 }
 
 .titulo {
-  color: blue;
+  color: #23a3e1;
   text-align: right;
   margin: auto;
   padding-top: 10px;
   margin-right: 200px;
   display: inline;
-  
 }
 .logo {
   position: absolute;
@@ -126,7 +125,7 @@ ul.slider li:target {
   width: 200px;
   height: 40px;
   /*font-weight: bolder;*/
-  font-size:medium;
+  font-size: medium;
   margin-left: 110px;
 }
 /*option orden alfabetico*/
@@ -135,7 +134,7 @@ ul.slider li:target {
   color: white;
   border-radius: 12px;
   font-family: "Dosis", sans-serif;
-  font-size: medium; 
+  font-size: medium;
   /*font-weight: bolder;*/
   width: 200px;
   height: 40px;
@@ -163,17 +162,15 @@ ul.slider li:target {
 }
 /* Scroll Personalizado */
 .roots::-webkit-scrollbar {
-	width: 20px;
+  width: 20px;
   background: gainsboro;
   border-radius: 15px 40px 40px 15px;
 }
 
 .roots::-webkit-scrollbar-thumb {
-	background: #56b32d;
-	border-radius: 35px;
-  
+  background: #56b32d;
+  border-radius: 35px;
 }
-
 
 .cell {
   width: 160px;
@@ -195,13 +192,11 @@ ul.slider li:target {
   text-align: left;
   color: gray;
   margin: -1px;
-  
 }
 
-input[type="search"]{
+input[type="search"] {
   padding: 10px;
   padding-right: 35px;
   border: solid #23a3e1;
   border-radius: 12px;
 }
-
