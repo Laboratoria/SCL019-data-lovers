@@ -164,11 +164,14 @@ ul.slider li:target {
 /* Scroll Personalizado */
 .roots::-webkit-scrollbar {
 	width: 20px;
+  background: gainsboro;
+  border-radius: 15px 40px 40px 15px;
 }
 
 .roots::-webkit-scrollbar-thumb {
 	background: #56b32d;
 	border-radius: 35px;
+  
 }
 
 

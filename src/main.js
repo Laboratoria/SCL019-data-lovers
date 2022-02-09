@@ -58,7 +58,7 @@ const card = (data) => {                                     // crear una funcio
      //console.log(resultado)                                                         // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
      card(resultado)                                                                  // se usa la funcion card para que nos cree el formado de var resultados 
      //console.log(resultado)
-     
+     athletes = resultado
  })
  //filtro segun deporte e imprimir en HTML
 const deporteFiltro = document.getElementById('deportes');
@@ -69,6 +69,7 @@ deporteFiltro.addEventListener('change',()=>{
     let deporteFiltrado = filterSport(athletes,selectSport)
 
     card(deporteFiltrado)
+    athletes = deporteFiltrado
 
 })
 
@@ -81,6 +82,7 @@ deporteFiltro.addEventListener('change',()=>{
      let paisFiltrado = filterNoc(athletes,selectPais)
  
      card(paisFiltrado)
+     athletes = paisFiltrado
  
         //console.log(paisFiltrado)
 
