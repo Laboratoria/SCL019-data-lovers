@@ -19,7 +19,7 @@ const card = (data) => {                                     // crear una funcio
     
     for (let i =0; i < data.length; i++){                    // repetir las sgtes instrucciones:
 
-        let tarjeta = document.createElement("div");      // crear  un elemento  <div>      
+        let tarjeta = document.createElement("div");        // crear  un elemento  <div>         
         let name= document.createElement("h3"); 
         let sport= document.createElement("p"); 
         let team= document.createElement("p");               // crear un elemneto <p> para ingresar la info
@@ -29,14 +29,14 @@ const card = (data) => {                                     // crear una funcio
         tarjeta.setAttribute("class", "cell");               // a la var creada, se le dan atributos  
         tarjeta.setAttribute("id", "card");                  // a la var creada, se le dan atributos de Id, card 
         
-        name.innerHTML = data[i].name;                                                       // que nos imprima el nombre en HTML                      
+        name.innerHTML = data[i].name;                       // que nos imprima el nombre en HTML                      
         sport.innerHTML = "Deporte: " + data[i].sport; 
         team.innerHTML = "Pais: " + data[i].team; 
         medal.innerHTML = "Medalla: " + data[i].medal;   
         gender.innerHTML = "Medalla: " + data[i].gender;                    
         
             
-        root.appendChild(tarjeta);                 // crea el. hijos igual a la tarjeta definida en html                  
+        root.appendChild(tarjeta);                          // crea el. hijos igual a la tarjeta definida en html                  
         tarjeta.appendChild(name);
         tarjeta.appendChild(sport); 
         tarjeta.appendChild(team);  
