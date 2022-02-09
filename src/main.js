@@ -23,7 +23,8 @@ const card = (data) => {                                     // crear una funcio
         let name= document.createElement("h3"); 
         let sport= document.createElement("p"); 
         let team= document.createElement("p");               // crear un elemneto <p> para ingresar la info
-        let medal= document.createElement("p");                
+        let medal= document.createElement("p");
+        let gender= document.createElement("p");                    
         
         tarjeta.setAttribute("class", "cell");               // a la var creada, se le dan atributos  
         tarjeta.setAttribute("id", "card");                  // a la var creada, se le dan atributos de Id, card 
@@ -31,14 +32,16 @@ const card = (data) => {                                     // crear una funcio
         name.innerHTML = data[i].name;                       // que nos imprima el nombre en HTML   
         sport.innerHTML = "Deporte: " + data[i].sport; 
         team.innerHTML = "Pais: " + data[i].team; 
-        medal.innerHTML = "Medalla: " + data[i].medal;                      
+        medal.innerHTML = "Medalla: " + data[i].medal;   
+        gender.innerHTML = "Medalla: " + data[i].gender;                    
         
             
         root.appendChild(tarjeta);                           // crea el. hijos igual a la tarjeta definida en html
         tarjeta.appendChild(name);
         tarjeta.appendChild(sport); 
         tarjeta.appendChild(team);  
-        tarjeta.appendChild(medal);                         // la tarjeta llevara  el elemento hijo
+        tarjeta.appendChild(medal);
+        tarjeta.appendChild(gender);                            // la tarjeta llevara  el elemento hijo
     }
     
     }
@@ -52,13 +55,13 @@ const card = (data) => {                                     // crear una funcio
  
  atletasFiltro.addEventListener('change',()=>{                                        // evento que se dispara info ligada a la opcion de seleccion y que realice la sgte funcion 
      var selectGenero = atletasFiltro.options[atletasFiltro.selectedIndex].value;     // se crea var que tome las opciones desde la const aletasfiltro y segun  el valor seleccionado (F-M)
-     //console.log(selectGenero)
+     console.log(selectGenero)
 
      let resultado = filterGenero(athletes,selectGenero) 
      //console.log(resultado)                                                         // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
      card(resultado)                                                                  // se usa la funcion card para que nos cree el formado de var resultados 
      //console.log(resultado)
-     athletes = resultado
+     //athletes = resultado
  })
  //filtro segun deporte e imprimir en HTML
 const deporteFiltro = document.getElementById('deportes');
@@ -69,7 +72,7 @@ deporteFiltro.addEventListener('change',()=>{
     let deporteFiltrado = filterSport(athletes,selectSport)
 
     card(deporteFiltrado)
-    athletes = deporteFiltrado
+    //athletes = deporteFiltrado
 
 })
 
@@ -78,11 +81,12 @@ deporteFiltro.addEventListener('change',()=>{
 
  paisesFiltro.addEventListener('change',()=>{
      var selectPais = paisesFiltro.options[paisesFiltro.selectedIndex].value;
- 
+        console.log(selectPais)
+
      let paisFiltrado = filterNoc(athletes,selectPais)
  
      card(paisFiltrado)
-     athletes = paisFiltrado
+     //athletes = paisFiltrado
  
         //console.log(paisFiltrado)
 
@@ -92,10 +96,12 @@ const alfabeto = document.getElementById ('ordenarSort');
     alfabeto.addEventListener('change', (evento) =>{
         var optionSelecionado = evento.target.value;
         if (optionSelecionado === 'az'){
+            
             let sortAZ = ordenarAZ(athletes);
             card(sortAZ)
         }
         if (optionSelecionado === 'za'){
+            
             let sortZA = ordenarZA(athletes);
             card(sortZA)
         }
