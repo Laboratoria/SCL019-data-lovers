@@ -37,13 +37,13 @@ export const ordenarAZ =(data) =>{
   const dataOrdenar = data.slice()
   const ordenarAsc = dataOrdenar.sort((a, b) => ((a.name.toUpperCase() > b.name.toUpperCase()) ? 1 : -1 ));
   return ordenarAsc;
-};
+ };
 //orden descendente
-export const ordenarZA =(data) =>{
-  const dataOrdenar = data.slice()
+ export const ordenarZA =(data) =>{
+  const dataOrdenar = data.slice()   
   const ordenarDes = dataOrdenar.sort((a, b) => ((a.name.toUpperCase() < b.name.toUpperCase()) ? 1 : -1 ));
   return ordenarDes;
-};
+ };
 
 
 
