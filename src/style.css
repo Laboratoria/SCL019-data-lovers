@@ -23,7 +23,7 @@ body {
   margin: auto;
   background-color: #56b32d;
   border-radius: 25px;
-  width: 600px;
+  width: 800px;
   height: 400px;
   padding: 30px;
 }
@@ -37,7 +37,7 @@ li {
 
 ul.slider {
   position: relative;
-  width: 550px;
+  width: 750px;
   height: 350px;
 }
 
