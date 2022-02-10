@@ -57,11 +57,12 @@ const card = (data) => {                                     // crear una funcio
      var selectGenero = atletasFiltro.options[atletasFiltro.selectedIndex].value;     // se crea var que tome las opciones desde la const aletasfiltro y segun  el valor seleccionado (F-M)
      console.log(selectGenero)
 
-     let resultado = filterGenero(athletes,selectGenero) 
+    let resultado = filterGenero(athletes,selectGenero) 
+     athletes = resultado
      //console.log(resultado)                                                         // se crea var resultado que tiliza la f de filtrar en los parametrso de la data y el valor de var creada em L41
-     card(resultado)                                                                  // se usa la funcion card para que nos cree el formado de var resultados 
-     //console.log(resultado)
-     //athletes = resultado
+     card(athletes)                                                                  // se usa la funcion card para que nos cree el formado de var resultados 
+     
+     
  })
  //filtro segun deporte e imprimir en HTML
 const deporteFiltro = document.getElementById('deportes');
@@ -70,8 +71,10 @@ deporteFiltro.addEventListener('change',()=>{
     var selectSport = deporteFiltro.options[deporteFiltro.selectedIndex].value;
 
     let deporteFiltrado = filterSport(athletes,selectSport)
+    athletes = deporteFiltrado
+    
 
-    card(deporteFiltrado)
+    card(athletes)
     //athletes = deporteFiltrado
 
 })
@@ -84,51 +87,34 @@ deporteFiltro.addEventListener('change',()=>{
         console.log(selectPais)
 
      let paisFiltrado = filterNoc(athletes,selectPais)
+     athletes = paisFiltrado
  
-     card(paisFiltrado)
+     card(athletes)
      //athletes = paisFiltrado
  
         //console.log(paisFiltrado)
 
  })
-// filtro orden alfabeticamente
-const alfabeto = document.getElementById ('ordenarSort');
+//filtro orden alfabeticamente
+ const alfabeto = document.getElementById ('ordenarSort');
     alfabeto.addEventListener('change', (evento) =>{
         var optionSelecionado = evento.target.value;
         if (optionSelecionado === 'az'){
             
             let sortAZ = ordenarAZ(athletes);
-            card(sortAZ)
+            athletes = sortAZ
+            
+            card(athletes)
         }
         if (optionSelecionado === 'za'){
             
-            let sortZA = ordenarZA(athletes);
-            card(sortZA)
+           let sortZA = ordenarZA(athletes);
+           athletes = sortZA
+           card(athletes)
         }
 
 
 
 });
-
-
-/* buscador por atleta */
-// const inputSearch = document.getElementById('search');                  
-
-// inputSearch.addEventListener('input', (e) => {
-// const { value } = e.target;
-// card(buscar(athletes, value));
-// });
-
-
-
-
-
-
-//femFiltro.addEventListener('click', ()=>{
-    //let resultado = filterGenero(athletes,'F')
-    //card(resultado)
-    //console.log(resultado)
-     
- //});
 
 
