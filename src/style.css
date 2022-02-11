@@ -118,6 +118,7 @@ ul.slider li:target {
   width: 15 em;
   border-left: 11.25em;
   margin-left: 6.25em;
+  font-size: 1.15em;
   
   
     
@@ -130,9 +131,10 @@ ul.slider li:target {
   border-radius: 0.75rem;
   font-family: "Dosis", sans-serif;
   /*font-weight: bolder;*/
-  width: 12.5rem;
+  width: 12.7rem;
   height: 2.5rem;
   margin-left: 4.37rem;
+  font-size: 1.15em;
 }
 
 /*Pie de Pagina*/
@@ -209,6 +211,7 @@ ul.slider li:target {
   .atletasMedallistas,
   .deportes,
   .paises {
+    font-size: 1.2em;
     padding: 4px;
     border-left: 5.25em;
     margin-left: 2.25em;
@@ -216,6 +219,7 @@ ul.slider li:target {
 
     /*option orden alfabetico*/
   .ordenarSort {
+    font-size: 1.2em;
     height: 2em;
     margin-left: 2.25em;
   }
