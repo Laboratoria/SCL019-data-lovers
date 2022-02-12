@@ -92,7 +92,7 @@ ul.slider li:target {
   padding: 0.62em;
   width: 1.25rem;
   height: 1.25rem;
-  font-size: 1.25em;                
+  font-size: 1.25em;
   border-radius: 100%;
   margin-top: 1.25rem;
 }
@@ -104,8 +104,6 @@ ul.slider li:target {
   padding: 1.25em;
   border-radius: 1.25em;
   display: flex;
-  
- 
 }
 /*option de la barra*/
 .atletasMedallistas,
@@ -119,10 +117,6 @@ ul.slider li:target {
   border-left: 11.25em;
   margin-left: 6.25em;
   font-size: 1.15em;
-  
-  
-    
-  
 }
 /*option orden alfabetico*/
 .ordenarSort {
@@ -167,10 +161,14 @@ ul.slider li:target {
   background: #56b32d;
   border-radius: 2.18em;
 }
+.imgIcono {
+  width: 150px;
+  height: 120px;
+}
 
 .cell {
   width: 10em;
-  height: 12.5em;
+  height: 20em;
   border: solid #56b32d;
   border-radius: 0.62em;
   padding: 0.62em;
@@ -181,33 +179,33 @@ ul.slider li:target {
   text-align: center;
   font-weight: bold;
   color: gray;
-  padding-bottom: 2.18em;
+  padding-bottom: 1.4em;
 }
 .roots p {
   font-style: normal;
   text-align: left;
   color: gray;
-  margin: -1px;
+  margin: 1px;
 }
 
- /* medium devices (tablets 768px)*/
-@media (max-width: 768px){
+/* medium devices (tablets 768px)*/
+@media (max-width: 768px) {
   body {
     font-size: 14px;
   }
   .container {
     width: 35em;
   }
-   
+
   ul.slider {
     width: 32.76em;
   }
 
-    /*Barra menu*/
+  /*Barra menu*/
   .contenedorBarra {
     min-width: 3.55em;
   }
-    /*option de la barra*/
+  /*option de la barra*/
   .atletasMedallistas,
   .deportes,
   .paises {
@@ -217,13 +215,10 @@ ul.slider li:target {
     margin-left: 2.25em;
   }
 
-    /*option orden alfabetico*/
+  /*option orden alfabetico*/
   .ordenarSort {
     font-size: 1.2em;
     height: 2em;
     margin-left: 2.25em;
   }
-
-
-
-}    
+}
