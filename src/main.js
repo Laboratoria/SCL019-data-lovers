@@ -19,29 +19,39 @@ const card = (data) => {                                     // crear una funcio
     
     for (let i =0; i < data.length; i++){                    // repetir las sgtes instrucciones:
 
-        let tarjeta = document.createElement("div");        // crear  un elemento  <div>         
+        let tarjeta = document.createElement("div");
+        let photo = document.createElement("img");          // crear  un elemento  <div>         
         let name= document.createElement("h3"); 
         let sport= document.createElement("p"); 
         let team= document.createElement("p");               // crear un elemneto <p> para ingresar la info
-        let medal= document.createElement("p");
-        let gender= document.createElement("p");                    
+        let medal= document.createElement("p");                   
         
         tarjeta.setAttribute("class", "cell");               // a la var creada, se le dan atributos  
-        tarjeta.setAttribute("id", "card");                  // a la var creada, se le dan atributos de Id, card 
+        tarjeta.setAttribute("id", "card"); 
+        photo.setAttribute("class", "imgIcono");                 // a la var creada, se le dan atributos de Id, card 
+        
+                         
         
         name.innerHTML = data[i].name;                       // que nos imprima el nombre en HTML                      
         sport.innerHTML = "Deporte: " + data[i].sport; 
         team.innerHTML = "Pais: " + data[i].team; 
         medal.innerHTML = "Medalla: " + data[i].medal;   
-        gender.innerHTML = "Medalla: " + data[i].gender;                    
+         
+        if (data[i].gender === 'F'){
+            photo.innerHTML = photo.src = "iconoMujer.png";
+        } else {
+            photo.innerHTML = photo.src = "IconoHombre.png";
+        }
+           
         
-            
-        root.appendChild(tarjeta);                          // crea el. hijos igual a la tarjeta definida en html                  
-        tarjeta.appendChild(name);
+        root.appendChild(tarjeta);                      // esta parte le otorga el orden dentro de la
+        tarjeta.appendChild(photo);                    // crea el. hijos igual a la tarjeta definida en html                                        
+        tarjeta.appendChild(name);                      // la tarjeta llevara  el elemento hijo
         tarjeta.appendChild(sport); 
         tarjeta.appendChild(team);  
         tarjeta.appendChild(medal);
-        tarjeta.appendChild(gender);                            // la tarjeta llevara  el elemento hijo
+         
+                                
     }
     
     }
@@ -49,6 +59,8 @@ const card = (data) => {                                     // crear una funcio
     window.addEventListener('load',()=>{                     // Evento que al abrir nuestra pagina aparezcan las card(tarjetas con nombre de atletas)
         card(athletes)
     })
+
+    
 
 //filtro segun genero e imprimir en HTML
  const atletasFiltro = document.getElementById('atletasMedallistas');                 //se crea var, que llame desde el select creado, select que tiene 2 opciones
