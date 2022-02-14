@@ -119,7 +119,8 @@ ul.slider li:target {
   font-size: 1.15em;
 }
 /*option orden alfabetico*/
-.ordenarSort {
+.ordenarSort,
+.refresh-button {
   background: #23a3e1;
   color: white;
   border-radius: 0.75rem;
