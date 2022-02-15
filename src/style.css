@@ -1,9 +1,15 @@
 body {
   background-color: white;
   font-family: "Dosis", sans-serif;
-  border: 10px solid black;
+  border: 10px solid black ;
 }
 
+p{
+  margin-top: 0;
+  margin-bottom: 0%;
+  padding-top: 4px;
+  font-size: 1.25em;
+}  
 .titulo {
   color: #23a3e1;
   text-align: right;
@@ -33,18 +39,16 @@ li {
   padding: 0;
   margin: 0;
   list-style: none;
-}
+} 
 
 ul.slider {
   position: relative;
-  width: 85%;
+  width: 100%;
   height: 21.85em;
 }
 
 ul.slider li {
   position: absolute;
-  left: 1.37em;
-  right: 1.37em;
   top: 0px;
   opacity: 0;
   width: 100%;
@@ -54,6 +58,7 @@ ul.slider li {
   color: white;
   font-weight: 500;
   border-radius: 1.25em;
+  object-fit: fill;
 }
 
 ul.slider li img {
@@ -61,7 +66,7 @@ ul.slider li img {
   height: 21.875em;
   border-radius: 1.56em;
   margin-top: 0px;
-  text-align: center;
+  display: flex;
   object-fit: cover;
 }
 
@@ -105,7 +110,7 @@ ul.slider li:target {
   border-radius: 1.25em;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin:0 auto;
 }
 /*option de la barra*/
 .atletasMedallistas,
@@ -123,7 +128,7 @@ ul.slider li:target {
 }
 /*option orden alfabetico*/
 .ordenarSort,
-.refresh-button {
+.refresh-button{
   background: #23a3e1;
   color: white;
   border-radius: 0.75em;
@@ -154,6 +159,7 @@ ul.slider li:target {
   border-radius: 1.87em;
   padding: 0.62em;
   margin: 1em;
+  
 }
 /* Scroll Personalizado */
 .roots::-webkit-scrollbar {
@@ -194,11 +200,16 @@ ul.slider li:target {
   margin: 1px;
 }
 
+
 /* medium devices (tablets 768px)*/
 @media (max-width: 768px) {
   body {
     font-size: 12px;
   }
+  p{
+    font-size: 12px;
+  }
+
 }
 
 /* medium devices (mobile 375px)*/
@@ -206,4 +217,7 @@ ul.slider li:target {
   body {
     font-size: 7px;
   }
+    p{
+      font-size: 7px;
+    }
 }
