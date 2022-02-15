@@ -49,8 +49,3 @@ export const ordenarAZ =(data) =>{
 
 
 
-// //input buscar
-// export const buscar = (athletes, value) => {
-//   const buscador = athletes.filter(el => el.name.toLowerCase().includes(value.toLowerCase()));
-//   return buscador;
-//   };
