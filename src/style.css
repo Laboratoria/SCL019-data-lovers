@@ -1,7 +1,7 @@
 body {
   background-color: white;
   font-family: "Dosis", sans-serif;
-  border: 10px solid black ;
+  border: 10px solid black;
 }
 
 .titulo {
@@ -105,7 +105,7 @@ ul.slider li:target {
   border-radius: 1.25em;
   display: flex;
   flex-wrap: wrap;
-  margin:0 auto;
+  margin: 0 auto;
 }
 /*option de la barra*/
 .atletasMedallistas,
@@ -123,11 +123,7 @@ ul.slider li:target {
 }
 /*option orden alfabetico*/
 .ordenarSort,
-<<<<<<< HEAD
 .refresh-button {
-=======
-.refresh-button{
->>>>>>> cff899bcaa64e7ec887565dd6f5a553f343300d0
   background: #23a3e1;
   color: white;
   border-radius: 0.75em;
@@ -198,13 +194,11 @@ ul.slider li:target {
   margin: 1px;
 }
 
-
 /* medium devices (tablets 768px)*/
 @media (max-width: 768px) {
   body {
     font-size: 12px;
   }
-
 }
 
 /* medium devices (mobile 375px)*/
