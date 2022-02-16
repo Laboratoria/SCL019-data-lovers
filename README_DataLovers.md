@@ -45,13 +45,16 @@ Para trabajar en esta interfaz  extrajimos la base de datos que trae el proyecto
 ## 3. Historias de Usuarios
 
 Mediante el cuestionario utilizado pudimos extraer que: 
+
+
 ![image-Grafico-info](src/imagenes/Grafico_info.png)
+
 Los usuarios de nuestra web no conocen información de los JJOO río 2016.
 Para resolver este primer paso es que entendemos que nuestra página debe ser sencilla y precisa con la información relevante.
 Para ello decidimos realizar un slaider con imagenes  y una breve informacion general.
 
 
- ![image-Grafico-H-Usuarios](src/imagenes/Grafico_H_Usuarios.png
+ ![image-Grafico-H-Usuarios](src/imagenes/Grafico_H_Usuarios.png)
 
 
   INFO SLIDER
