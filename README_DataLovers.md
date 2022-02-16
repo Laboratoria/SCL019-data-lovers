@@ -27,7 +27,7 @@ Para ello utilizamos un interfaz amigable y entendible para cualquier persona.
 
 Para esta realizar nuesro pagina iniciamos realzando una investigación con respecto a la informacion de JJOO, utilizando un cuestionario de google el cual compartimos en RRSS.
 El resultado de es el siguiente: 
-![image](./imagenes/Grafico_edad.png)
+![image-Grafico_edad](src/imagenes/Grafico_edad.png)
 
 
 "Nuestros usuarios son adulto joven, ya que el rango etario fluctúa entre los 26 a 35 años como nos muestra el gráfico."
@@ -43,11 +43,11 @@ Para trabajar en esta interfaz  extrajimos la base de datos que trae el proyecto
 ## 3. Historias de Usuarios
 
 Mediante el cuestionario utilizado pudimos extraer que: 
-![image](./imagenes/Grafico_info.png)
+![image-Grafico_info](src/imagenes/Grafico_info.png)
 Los usuarios de nuestra web no conocen información de los JJOO río 2016.
 Para resolver este primer paso es que entendemos que nuestra página debe ser sencilla y precisa con la información relevante.
 Para ello decidimos realizar un slaider con imagenes  y una breve informacion general.-
- ![image](./imagenes/Grafico_H_Usuarios.png)
+ ![image-Grafico_H_Usuarios](src/imagenes/Grafico_H_Usuarios.png
 
   INFO SLIDER
 1.- Países participantes
