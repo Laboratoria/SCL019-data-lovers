@@ -7,7 +7,7 @@
 * [3. Historias de Usuarios](#3-historias-de-usuarios)
 * [4. Testeos](#4-testeos)
 * [5. Feedback](#5-feedback)
-* [6. Hacker edition](#6-hacker-edition)
+
 
 
 ***
@@ -98,29 +98,32 @@ Prototipo de baja fidelidad
 
  ![image-baja-fidelidad](src/imagenes/prototipo_data_lovers.png)
 
- 
- ![image-baja-fidelidad-2](src/imagenes/prototipo_data_lovers_2.png)
+
+ ![image-baja-fidelidad-2](src/imagenes/Prototipo_data_lovers2.png)
 
 
- 
-Prototipo de alta fidelidad
-https://www.figma.com/file/B7uZcUIxPDZw9ic68gIbzK/Data-lover-team-library?node-id=0%3A1
+ Prototipo de alta fidelidad
 
-
-
-
-
-
-
+ ![image-alta-fidelidad-2](src/imagenes/Figma_DL.png)
 
 
 ## 4. Testeos
+
+Durante este proyecto realizamos los tests correspondiente a las funciones que empleamos, todos nuestros test pasaron sin problemas.
 
 
 
 ## 5. Feedback
 
+En los sprint de nuestro proyecto en varias oportunidades tuvimos feedback de nuestras compañeras, los que hemos tomado para mejorar tanto lo visual como su funcionalidad.
+En estas instancias pudimos testear la funcionalidad de nustra pagina y como la reciben los usuarios, para ir mejorandola en caso de que sea necesario, cada comentario lo revisamos e implementamos.
 
 
 
-## 6. Hacker edition
+
+
+
+
+
+
+
