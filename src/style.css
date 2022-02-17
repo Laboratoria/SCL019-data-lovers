@@ -173,8 +173,10 @@ ul.slider li:target {
   border-radius: 2.18em;
 }
 .imgIcono {
-  width: 9.375em;
-  height: 7.5em;
+  width: 8.375em;
+  height: 6.5em;
+  display: block;
+  margin: 0px auto;
 }
 
 .cell {
@@ -186,6 +188,7 @@ ul.slider li:target {
   margin: 1.3em;
   font-family: "Dosis", sans-serif;
   justify-content: space-between;
+
 }
 .roots h3 {
   text-align: center;
@@ -194,7 +197,6 @@ ul.slider li:target {
   padding-bottom: 1.4em;
 }
 .roots p {
-  font-style: normal;
   text-align: left;
   color: gray;
   margin: 1px;
