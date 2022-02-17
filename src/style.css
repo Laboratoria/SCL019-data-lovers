@@ -1,15 +1,14 @@
 body {
   background-color: white;
   font-family: "Dosis", sans-serif;
-  border: 10px solid black ;
 }
 
-p{
+p {
   margin-top: 0;
   margin-bottom: 0%;
   padding-top: 4px;
   font-size: 1.25em;
-}  
+}
 .titulo {
   color: #23a3e1;
   text-align: right;
@@ -21,8 +20,8 @@ p{
   position: absolute;
   width: 15%;
   height: 6.5em;
-  left: 1 em;
-  top: 1 em;
+  left: 1em;
+  top: 1em;
 }
 
 .container {
@@ -39,7 +38,7 @@ li {
   padding: 0;
   margin: 0;
   list-style: none;
-} 
+}
 
 ul.slider {
   position: relative;
@@ -110,7 +109,8 @@ ul.slider li:target {
   border-radius: 1.25em;
   display: flex;
   flex-wrap: wrap;
-  margin:0 auto;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 /*option de la barra*/
 .atletasMedallistas,
@@ -128,7 +128,7 @@ ul.slider li:target {
 }
 /*option orden alfabetico*/
 .ordenarSort,
-.refresh-button{
+.refresh-button {
   background: #23a3e1;
   color: white;
   border-radius: 0.75em;
@@ -159,7 +159,6 @@ ul.slider li:target {
   border-radius: 1.87em;
   padding: 0.62em;
   margin: 1em;
-  
 }
 /* Scroll Personalizado */
 .roots::-webkit-scrollbar {
@@ -188,7 +187,6 @@ ul.slider li:target {
   margin: 1.3em;
   font-family: "Dosis", sans-serif;
   justify-content: space-between;
-
 }
 .roots h3 {
   text-align: center;
@@ -202,16 +200,14 @@ ul.slider li:target {
   margin: 1px;
 }
 
-
 /* medium devices (tablets 768px)*/
 @media (max-width: 768px) {
   body {
     font-size: 12px;
   }
-  p{
+  p {
     font-size: 12px;
   }
-
 }
 
 /* medium devices (mobile 375px)*/
@@ -219,7 +215,7 @@ ul.slider li:target {
   body {
     font-size: 7px;
   }
-    p{
-      font-size: 7px;
-    }
+  p {
+    font-size: 7px;
+  }
 }
