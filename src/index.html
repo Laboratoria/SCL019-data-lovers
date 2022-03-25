@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rick and Morty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+     <div class="container">
+          <header>
+                <img src="img/logo-rym.png" class="img-logo"> 
+                 <h2>¡ Meet the characters !</h2>                             
+                    <form action="">
+                      <input type="text" name="search" autocomplete="off" placeholder="search by name of character" class="search" id="search">
+                    </form>
+           </header>    
+          <main>   
+            <section>
+            <div class="bar-container" id="bar-container">
+                  <select name="selectSpecies" id="select-species" class="select-species">
+                    <option value="specie">SELECT SPECIE</option>
+                    <option value="Human">HUMAN</option>
+                    <option value="Alien">ALIEN</option>
+                    <option value="Humanoid">HUMANOID</option>
+                    <option value="Animal">ANIMAL</option>
+                    <option value="Robot">ROBOT</option>
+                    <option value="Mytholog">MYTHOLOG</option>
+                    <option value="Vampire">VAMPIRE</option>
+                  </select>    
+                  <select name="selectGender" id="select-gender" class="select-gender">
+                    <option value="gender">SELECT GENDER</option>
+                    <option value="Female">FEMALE</option>
+                    <option value="Male">MALE</option>
+                    <option value="unknown">UNKNOWN</option>
+                  </select>    
+                  <select name="selectOrder" id="select-sort" class="select-sort">
+                    <option value="order">SORT BY NAME</option>
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                  </select>
+             
+                  <div class="compute" id="compute">  
+                    <p class="human"> HUMANS:<i class="fas fa-male"></i><span id="compute-human"></span>%</p>-         
+                    <p class="alien"> ALIENS:<i class="fab fa-reddit-alien"></i><span id="compute-alien"></span>%</p>                   
+                  </div>   
+            </div>            
+            </section> 
+                <div class="board" id="board">
+              </div>              
+        </main>    
+      </div> 
+      <footer class="social-networks">     
+          <p>Follow Rick and Morty</p>      
+          <a href="https://es-la.facebook.com/RickandMorty/" class="facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/rickandmorty/?hl=es" class="instagram"><i class="fab fa-instagram-square"></i></a>
+              <a href="https://twitter.com/RickandMorty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fab fa-twitter-square"></i></a>
+        
+      </footer>
     <script src="main.js" type="module"></script>
-  </body>
+</body>
+
 </html>
