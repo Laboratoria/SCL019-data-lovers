@@ -1,0 +1,221 @@
+body {
+  background-color: white;
+  font-family: "Dosis", sans-serif;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0%;
+  padding-top: 4px;
+  font-size: 1.25em;
+}
+.titulo {
+  color: #23a3e1;
+  text-align: right;
+  padding-top: 0.6em;
+  border-right: 1.25em;
+  /*display: inline;*/
+}
+.logo {
+  position: absolute;
+  width: 15%;
+  height: 6.5em;
+  left: 1em;
+  top: 1em;
+}
+
+.container {
+  margin: auto;
+  background-color: #56b32d;
+  border-radius: 1.56em;
+  width: 52%;
+  height: 25em;
+  padding: 1.87em;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.slider {
+  position: relative;
+  width: 100%;
+  height: 21.85em;
+}
+
+ul.slider li {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  width: 100%;
+  height: 21.875em;
+  transition: opacity 0.5s;
+  background: #56b32d;
+  color: white;
+  font-weight: 500;
+  border-radius: 1.25em;
+  object-fit: fill;
+}
+
+ul.slider li img {
+  width: 100%;
+  height: 21.875em;
+  border-radius: 1.56em;
+  margin-top: 0px;
+  display: flex;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu {
+  text-align: center;
+  margin: 0.63em;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #23a3e1;
+  padding: 0.62em;
+  width: 1.25em;
+  height: 1.25em;
+  font-size: 1.25em;
+  border-radius: 100%;
+  margin-top: 1 em;
+}
+
+/*Barra menu*/
+.contenedorBarra {
+  width: 100%;
+  background: hsl(200, 76%, 51%);
+  box-sizing: border-box;
+  padding: 1.25em;
+  border-radius: 1.25em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+/*option de la barra*/
+.atletasMedallistas,
+.deportes,
+.paises {
+  padding: 0.5em;
+  overflow-y: scroll;
+  border-radius: 0.75em;
+  font-family: "Dosis", sans-serif;
+  width: auto;
+  border-left: 11.25em;
+  /*margin-left: 6.25em;*/
+  font-size: 1.15em;
+  flex-wrap: wrap;
+}
+/*option orden alfabetico*/
+.ordenarSort,
+.refresh-button {
+  background: #23a3e1;
+  color: white;
+  border-radius: 0.75em;
+  font-family: "Dosis", sans-serif;
+  /*font-weight: bolder;*/
+  width: 12.7em;
+  height: 2.5em;
+  margin-left: 4.37em;
+  font-size: 1.15em;
+}
+
+/*Pie de Pagina*/
+.piePagina {
+  margin: auto;
+  display: block;
+  width: 31.2em;
+  text-align: center;
+}
+/*caja donde se muestra la info*/
+.roots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 35em;
+  overflow-y: scroll;
+  border: 10px solid #23a3e1;
+  border-radius: 1.87em;
+  padding: 0.62em;
+  margin: 1em;
+}
+/* Scroll Personalizado */
+.roots::-webkit-scrollbar {
+  width: 1.25em;
+  background: gainsboro;
+  border-radius: 0.93em 2.5em 2.5em 0.93em;
+}
+
+.roots::-webkit-scrollbar-thumb {
+  background: #56b32d;
+  border-radius: 2.18em;
+}
+.imgIcono {
+  width: 8.375em;
+  height: 6.5em;
+  display: block;
+  margin: 0px auto;
+}
+
+.cell {
+  width: 10em;
+  height: 20em;
+  border: solid #56b32d;
+  border-radius: 0.62em;
+  padding: 0.62em;
+  margin: 1.3em;
+  font-family: "Dosis", sans-serif;
+  justify-content: space-between;
+}
+.roots h3 {
+  text-align: center;
+  font-weight: bold;
+  color: gray;
+  padding-bottom: 1.4em;
+}
+.roots p {
+  text-align: left;
+  color: gray;
+  margin: 1px;
+}
+
+/* medium devices (tablets 768px)*/
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+/* medium devices (mobile 375px)*/
+@media (max-width: 375px) {
+  body {
+    font-size: 7px;
+  }
+  p {
+    font-size: 7px;
+  }
+}
